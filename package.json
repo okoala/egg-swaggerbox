@@ -33,9 +33,6 @@
     "eslint-config-egg": "^7.1.0",
     "webstorm-disable-index": "^1.2.0"
   },
-  "engines": {
-    "node": ">=8.0.0"
-  },
   "scripts": {
     "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",
@@ -52,6 +49,9 @@
   ],
   "ci": {
     "version": "8, 10"
+  },
+  "engines": {
+    "node": ">=8.0.0"
   },
   "repository": {
     "type": "git",
