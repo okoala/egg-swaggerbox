@@ -1,12 +1,29 @@
 'use strict';
 
 const swaggerLoader = require('./lib/swagger_loader');
-const swaggerUI = require('../lib/swagger_ui');
+const swaggerUI = require('./lib/swagger_ui');
+const SwaggerRouter = require('./lib/swagger_router');
 
-module.exports = app => {
-  app.swagger = swaggerLoader(app);
+module.exports = class {
+  constructor(app) {
+    this.app = app;
+  }
 
-  if (app.config.swaggerbox.ui.enable) {
-    swaggerUI(app);
+  async didLoad() {
+    const { app } = this;
+    app.swagger = swaggerLoader(app);
+
+    if (app.config.swaggerbox.ui.enable) {
+      swaggerUI(app);
+    }
+
+    if (app.config.swaggerbox.validator.enable) {
+      const swaggerRouter = new SwaggerRouter(
+        app,
+        app.config.swaggerbox.router
+      );
+
+      await swaggerRouter.init();
+    }
   }
 };

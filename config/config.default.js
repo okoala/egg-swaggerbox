@@ -40,6 +40,10 @@ exports.swaggerbox = {
     // },
   },
   enableSecurity: false,
+  router: {
+    enable: true,
+    validator: 'ajv',
+  },
   ui: {
     enable: true,
     prefix: '/',
