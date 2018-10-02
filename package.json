@@ -1,0 +1,57 @@
+{
+  "name": "egg-swaggerbox",
+  "version": "1.4.0",
+  "description": "swagger box for egg",
+  "eggPlugin": {
+    "name": "swaggerbox"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin"
+  ],
+  "dependencies": {
+    "koa-static-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "autod": "^3.0.0",
+    "autod-egg": "^1.0.0",
+    "egg": "^2.0.0",
+    "egg-bin": "^4.3.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.13.0",
+    "eslint": "^4.11.0",
+    "eslint-config-egg": "^5.1.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "files": [
+    "app.js",
+    "config",
+    "app",
+    "lib"
+  ],
+  "ci": {
+    "version": "8, 10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okoala/egg-swaggerbox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/okoala/egg-swaggerbox/issues"
+  },
+  "homepage": "https://github.com/okoala/egg-swaggerbox#readme",
+  "author": "okoala",
+  "license": "MIT"
+}
