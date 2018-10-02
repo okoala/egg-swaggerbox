@@ -1,26 +1,17 @@
-'use strict';
+"use strict";
 
 module.exports = {
   write: true,
-  prefix: '^',
-  plugin: 'autod-egg',
-  test: [
-    'test',
-    'benchmark',
-  ],
+  prefix: "^",
+  plugin: "autod-egg",
+  exclude: ["test/fixtures", "examples", "docs", "run", "app/public"],
   devdep: [
-    'egg',
-    'egg-ci',
-    'egg-bin',
-    'autod',
-    'autod-egg',
-    'eslint',
-    'eslint-config-egg',
-    'webstorm-disable-index',
-  ],
-  exclude: [
-    './test/fixtures',
-    './docs',
-    './coverage',
-  ],
+    "autod",
+    "autod-egg",
+    "egg-ci",
+    "egg-bin",
+    "eslint",
+    "eslint-config-egg",
+    "webstorm-disable-index"
+  ]
 };

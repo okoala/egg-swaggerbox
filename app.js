@@ -17,7 +17,7 @@ module.exports = class {
       swaggerUI(app);
     }
 
-    if (app.config.swaggerbox.validator.enable) {
+    if (app.config.swaggerbox.router.enable) {
       const swaggerRouter = new SwaggerRouter(
         app,
         app.config.swaggerbox.router
