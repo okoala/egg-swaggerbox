@@ -2,7 +2,7 @@
 
 const mock = require('egg-mock');
 
-describe('test/index.test.js', () => {
+describe('test/loader.test.js', () => {
   let app;
   before(() => {
     app = mock.app({

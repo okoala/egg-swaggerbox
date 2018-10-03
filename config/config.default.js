@@ -20,9 +20,9 @@ exports.swaggerbox = {
     description: 'swagger-ui for egg',
     version: '1.0.0',
   },
-  schemes: ['http', 'https'],
-  consumes: ['application/json'],
-  produces: ['application/json'],
+  schemes: [ 'http', 'https' ],
+  consumes: [ 'application/json' ],
+  produces: [ 'application/json' ],
   securityDefinitions: {
     // apikey: {
     //   type: 'apiKey',
@@ -43,6 +43,8 @@ exports.swaggerbox = {
   router: {
     enable: true,
     validator: 'ajv',
+    // match: [], // only run in match route
+    // ignore: [], // should ignore route
   },
   ui: {
     enable: true,
