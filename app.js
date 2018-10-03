@@ -1,8 +1,8 @@
-"use strict";
+'use strict';
 
-const swaggerLoader = require("./lib/swagger_loader");
-const swaggerUI = require("./lib/swagger_ui");
-const SwaggerRouter = require("./lib/swagger_router");
+const swaggerLoader = require('./lib/swagger_loader');
+const swaggerUI = require('./lib/swagger_ui');
+const SwaggerRouter = require('./lib/swagger_router');
 
 module.exports = app => {
   app.swagger = swaggerLoader(app);

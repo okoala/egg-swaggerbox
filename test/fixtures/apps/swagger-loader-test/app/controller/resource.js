@@ -14,11 +14,11 @@ class ResourceController extends Controller {
    */
   async index() {
     this.ctx.body = {
-      result: true
+      result: true,
     };
   }
 
-    /**
+  /**
    * @Summary 创建资源
    * @Router POST /resource/create
    * @Request body createResource *body resourceInfo
@@ -27,7 +27,7 @@ class ResourceController extends Controller {
    */
   async create() {
     this.ctx.body = {
-      result: true
+      result: true,
     };
   }
 }

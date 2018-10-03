@@ -6,7 +6,7 @@ describe('test/index.test.js', () => {
   let app;
   before(() => {
     app = mock.app({
-      baseDir: 'apps/swagger-doc-test',
+      baseDir: 'apps/swagger-loader-test',
     });
     return app.ready();
   });
