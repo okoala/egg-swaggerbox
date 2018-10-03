@@ -11,13 +11,13 @@ swagger useful module for egg.
 
 [npm-image]: https://img.shields.io/npm/v/egg-swaggerbox.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-swaggerbox
-[travis-image]: https://img.shields.io/travis/eggjs/egg-swaggerbox.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-swaggerbox
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-swaggerbox.svg?style=flat-square
-[codecov-url]: https://codecov.io/gh/eggjs/egg-swaggerbox
-[david-image]: https://img.shields.io/david/eggjs/egg-swaggerbox.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-swaggerbox
-[snyk-image]: https://snyk.io/test/npm/egg/badge.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/okoala/egg-swaggerbox.svg?style=flat-square
+[travis-url]: https://travis-ci.org/okoala/egg-swaggerbox
+[codecov-image]: https://img.shields.io/codecov/c/github/okoala/egg-swaggerbox.svg?style=flat-square
+[codecov-url]: https://codecov.io/gh/okoala/egg-swaggerbox
+[david-image]: https://img.shields.io/david/okoala/egg-swaggerbox.svg?style=flat-square
+[david-url]: https://david-dm.org/okoala/egg-swaggerbox
+[snyk-image]: https://snyk.io/test/npm/egg-swaggerbox/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/egg-swaggerbox
 [download-image]: https://img.shields.io/npm/dm/egg-swaggerbox.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-swaggerbox
