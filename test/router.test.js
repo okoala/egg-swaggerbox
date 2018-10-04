@@ -6,7 +6,7 @@ describe('test/router.router.js', () => {
   let app;
   before(() => {
     app = mock.app({
-      baseDir: 'apps/swagger-router-test',
+      baseDir: 'apps/router',
     });
     return app.ready();
   });

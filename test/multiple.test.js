@@ -2,11 +2,11 @@
 
 const mock = require('egg-mock');
 
-describe('test/loader.test.js', () => {
+describe('test/multiple.test.js', () => {
   let app;
   before(() => {
     app = mock.app({
-      baseDir: 'apps/loader',
+      baseDir: 'apps/multiple-root',
     });
     return app.ready();
   });
@@ -14,17 +14,17 @@ describe('test/loader.test.js', () => {
   after(() => app.close());
   afterEach(mock.restore);
 
-  it('should GET /swagger-ui.html', () => {
+  it('should GET /resource', () => {
     return app
       .httpRequest()
-      .get('/swagger-ui.html')
+      .get('/resource')
       .expect(200);
   });
 
-  it('should GET /swagger-doc', () => {
+  it('should GET /api/children', () => {
     return app
       .httpRequest()
-      .get('/swagger-doc')
+      .get('/api/children')
       .expect(200);
   });
 });
