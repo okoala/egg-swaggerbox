@@ -22,6 +22,7 @@ module.exports = app => {
       );
 
       await swaggerRouter.init();
+      app.emit('swagger-router-initial-finished');
     }
   });
 };
