@@ -1,14 +1,20 @@
 'use strict';
 
 const mock = require('egg-mock');
+const assert = require('assert');
 
 describe('test/loader.test.js', () => {
-  let app;
+  let app,
+    ctx;
   before(() => {
     app = mock.app({
       baseDir: 'apps/loader',
     });
     return app.ready();
+  });
+
+  beforeEach(() => {
+    ctx = app.createAnonymousContext();
   });
 
   after(() => app.close());
@@ -26,5 +32,10 @@ describe('test/loader.test.js', () => {
       .httpRequest()
       .get('/swagger-doc')
       .expect(200);
+  });
+
+  it('should app name work', () => {
+    assert(ctx.app.config.swaggerbox.apiInfo.title === 'swagger-doc-test');
+    assert(ctx.app.config.swaggerbox.apiInfo.description === 'this is a test');
   });
 });
