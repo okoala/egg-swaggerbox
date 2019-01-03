@@ -21,7 +21,7 @@ module.exports = appInfo => {
     apiInfo: {
       title: appInfo.pkg.name || 'egg-swagger',
       description: appInfo.pkg.description || 'swagger-ui for egg',
-      version: '1.0.0',
+      version: appInfo.pkg.version || '1.0.0',
     },
     schemes: [ 'http', 'https' ],
     consumes: [ 'application/json' ],
